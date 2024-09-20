@@ -1,5 +1,5 @@
 cd agenta-web
-npx prettier  --write .
+npx prettier  --write  
 cd ../agenta-backend
 black .
 cd ../agenta-cli
