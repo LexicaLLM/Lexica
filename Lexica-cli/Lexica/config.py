@@ -1,8 +1,8 @@
 try:
-    from pydantic.v1 import BaseSettings  # type: ignore
+    from pydantic.v1 import BaseSettings  # type: ignore:
 except ImportError:
-    from pydantic import BaseSettings  # type: ignore
-
+    from pydantic import BaseSettings  # type: ignore:
+# Import complete
 import os
 import toml
 from pathlib import Path
