@@ -10,7 +10,7 @@ resource "aws_instance" "agenta" {
     volume_size = 50
     volume_type = "gp2"
   }
-
+# Import complete
   tags = {
     Name = "agenta-instance"
   }

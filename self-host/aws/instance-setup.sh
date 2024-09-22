@@ -3,7 +3,7 @@ set -e
 
 TARGET_DIR="/home/ubuntu"
 
-# install dependencies
+# install dependency
 sudo apt update
 
 # install docker
