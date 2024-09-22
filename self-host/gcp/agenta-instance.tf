@@ -13,7 +13,7 @@ resource "google_compute_instance" "agenta" {
       image = "debian-cloud/debian-11"
     }
   }
-
+ # Import complete
   network_interface {
     network = google_compute_network.ipv6net.id
     subnetwork = google_compute_subnetwork.ipv6subnet.id
