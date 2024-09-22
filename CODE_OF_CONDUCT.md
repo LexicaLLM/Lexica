@@ -12,7 +12,7 @@ and orientation.
 We pledge to act and interact in ways that contribute to an open, welcoming,
 diverse, inclusive, and healthy community.
 
-## Our Standards
+## Our Standards:
 
 Examples of behavior that contributes to a positive environment for our
 community includes:
@@ -36,7 +36,7 @@ Examples of unacceptable behavior include:
 * Other conduct that could reasonably be considered inappropriate in a
   professional setting
 
-## Enforcement Responsibilities
+## Enforcement Responsibilities:
 
 Community leaders are responsible for clarifying and enforcing our standards of
 acceptable behavior and will take appropriate and fair corrective action in
