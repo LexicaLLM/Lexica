@@ -1,4 +1,4 @@
-# Security Policy
+# Security Policies
 ## Reporting a Vulnerability
 
 If you believe you have found a security vulnerability in any Agenta repository, please report it to us through coordinated disclosure.
