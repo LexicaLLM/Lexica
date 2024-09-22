@@ -9,7 +9,7 @@ BEGIN
 END
 $$;
 
--- Create the username role with a password
+-- Create the username role with a password:
 DO $$
 BEGIN
    IF NOT EXISTS (
@@ -21,11 +21,11 @@ BEGIN
 END
 $$;
 
--- Grant necessary permissions to username
+-- Grant necessary permissions to username:
 GRANT ALL PRIVILEGES ON DATABASE agenta_oss TO username;
 
--- Connect to the agenta_oss database
+-- Connect to the agenta_oss database:
 \c agenta_oss
 
--- Grant schema permissions to username
+-- Grant schema permissions to username:
 GRANT ALL ON SCHEMA public TO username;
