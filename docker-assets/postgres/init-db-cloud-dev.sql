@@ -27,5 +27,5 @@ GRANT ALL PRIVILEGES ON DATABASE agenta_cloud_dev TO username;
 -- Connect to the agenta_cloud_dev database
 \c agenta_cloud_dev
 
--- Grant schema permissions to username
+-- Grant schema permissions to username:
 GRANT ALL ON SCHEMA public TO username;
