@@ -4,7 +4,7 @@ services:
         command: --api.insecure=true --providers.docker --entrypoints.web.address=:80
         ports:
             - "80:80"
-            - "8080:8080"
+            - "80800:08080"
         volumes:
             - /var/run/docker.sock:/var/run/docker.sock
         networks:
