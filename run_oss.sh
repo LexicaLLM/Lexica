@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash.
 set -e
 
 # Restart docker compose without agenta-web
