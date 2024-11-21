@@ -4,7 +4,7 @@ import tarfile
 import tempfile
 from pathlib import Path
 import os
-
+# Import complete
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
@@ -42,7 +42,7 @@ def build_tar_docker_container(folder: Path, file_name: Path) -> Path:
     Returns:
         the path to the created tar file
     """
-    tarfile_path = folder / "docker.tar.gz"  # output file
+    tarfile_path = folder / "docker.tar.gz"  # output file:
     if tarfile_path.exists():
         tarfile_path.unlink()
 
@@ -52,29 +52,29 @@ def build_tar_docker_container(folder: Path, file_name: Path) -> Path:
     shutil.copy(Path(__file__).parent / "docker-assets" / "lambda_function.py", folder)
     shutil.copy(Path(__file__).parent / "docker-assets" / "entrypoint.sh", folder)
 
-    # Initialize agentaignore_content with an empty string
+    # Initialize agentaignore_content with an empty string:
     agentaignore_content = ""
 
-    # Read the contents of .gitignore file
+    # Read the contents of .gitignore file:
     agentaignore_file_path = folder / ".agentaignore"
     if agentaignore_file_path.exists():
         with open(agentaignore_file_path, "r") as agentaignore_file:
             agentaignore_content = agentaignore_file.read()
 
-    # Create a temporary directory
+    # Create a temporary directory:
     with tempfile.TemporaryDirectory() as temp_dir:
         temp_path = Path(temp_dir)
 
-        # Clean - remove '/' from every files and folders in the gitignore contents
+        # Clean - remove '/' from every files and folders in the gitignore contents:
         sanitized_patterns = [
             pattern.replace("/", "") for pattern in agentaignore_content.splitlines()
         ]
 
-        # Function to ignore files based on the patterns
+        # Function to ignore files based on the patterns:
         def ignore_patterns(path, names):
             return set(sanitized_patterns)
 
-        # Use a single copytree call with ignore_patterns
+        # Use a single copytree call with ignore_patterns:
         shutil.copytree(folder, temp_path, ignore=ignore_patterns, dirs_exist_ok=True)
 
         # Rename the specified file to _app.py in the temporary directory
