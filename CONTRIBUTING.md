@@ -7,24 +7,24 @@ Thanks for your interest in contributing to Lexica! We appreciate your effort an
 
 ## Getting Started
 
-1. **Local Installation:** First, set up the project on your local machine. Follow the steps in our [Local Installation Guide](https://docs.agenta.ai/self-host/host-locally). 
+1. **Local Installation :** First, set up the project on your local machine. Follow the steps in our [Local Installation Guide](https://docs.agenta.ai/self-host/host-locally). 
 
-2. **Understand the Project:** Familiarize yourself with our architecture and concepts by reading our [Conceptual Guide](https://docs.agenta.ai/guides/how_does_agenta_work) and [Architecture Guide](https://docs.agenta.ai/guides/how_does_agenta_work#agenta-architecture).
+2. **Understand the Project :** Familiarize yourself with our architecture and concepts by reading our [Conceptual Guide](https://docs.agenta.ai/guides/how_does_agenta_work) and [Architecture Guide](https://docs.agenta.ai/guides/how_does_agenta_work#agenta-architecture).
 
-3. **Begin Development:** Once you’ve installed the project and understand its architecture, you’re ready to contribute. See the [Development Mode Tutorial](https://docs.agenta.ai/misc/contributing/development-mode) for instructions on running the code in development mode.
+3. **Begin Development :** Once you’ve installed the project and understand its architecture, you’re ready to contribute. See the [Development Mode Tutorial](https://docs.agenta.ai/misc/contributing/development-mode) for instructions on running the code in development mode.
 
 ## Code Formatting and Linting
 
 To maintain code quality, we adhere to certain formatting and linting rules:
 
-- **Backend & CLI Formatting with Black:** Use `black` for formatting code in the following directories:
+- **Backend & CLI Formatting with Black :** Use `black` for formatting code in the following directories:
     - `Lexica-backend/**`
     - `Lexica-cli/**`
     - `examples/**`
 
   Install `black` with `pip install black`, navigate to the target directory, and run `black .`.
 
-- **Frontend Formatting with Prettier:** We use `prettier` for frontend formatting. Run `npm run format-fix` in the `Lexica-web` directory. If you haven't yet installed `prettier`, do so with `npm install prettier`.
+- **Frontend Formatting with Prettier :** We use `prettier` for frontend formatting. Run `npm run format-fix` in the `Lexica-web` directory. If you haven't yet installed `prettier`, do so with `npm install prettier`.
 
 ## Contribution Steps
 
