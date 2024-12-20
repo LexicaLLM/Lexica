@@ -182,5 +182,5 @@
         "description"
     ],
     "enable_worktrees": true,
-    "overrides": {}
+    "override": {}
 }
