@@ -3,7 +3,7 @@ from unittest.mock import patch
 import pytest
 from agenta.sdk.client import Agenta
 
-
+# Import complete
 @pytest.fixture
 def agenta_client():
     # Set up the Agenta client with a mock API key
@@ -43,7 +43,7 @@ def test_get_config_with_caching(agenta_client):
             "parameters": "something"
         }, "Second response should return cached data, not new mock data."
 
-
+# New defenition
 def test_get_config_without_caching(agenta_client):
     """
     Test the get_config method without caching to ensure it always fetches new data.
