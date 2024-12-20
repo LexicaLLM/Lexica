@@ -5,14 +5,14 @@ import click
 import questionary
 from pathlib import Path
 from typing import Any, List, MutableMapping
-from agenta.client.api_models import AppVariant
+from Lexica.client.api_models import AppVariant
 
-
+# import complete
 from typing import Any, Optional
 from pathlib import Path
 import toml
 
-from agenta.client.backend.client import AgentaApi
+from Lexica.client.backend.client import LexicaApi
 
 BACKEND_URL_SUFFIX = os.environ.get("BACKEND_URL_SUFFIX", "api")
 POSTHOG_KEY = os.environ.get(
@@ -25,18 +25,18 @@ def get_global_config(var_name: str) -> Optional[Any]:
     Get the value of a global configuration variable.
 
     Args:
-        var_name: the name of the variable to get
+        var_name: the name of the variable to get.
 
     Returns:
-        the value of the variable, or None if it doesn't exist
+        the value of the variable, or None if it doesn't exist.
     """
-    agenta_dir = Path.home() / ".agenta"
-    if not agenta_dir.exists():
+    Lexica_dir = Path.home() / ".Lexica"
+    if not Lexica_dir.exists():
         return None
-    agenta_config_file = agenta_dir / "config.toml"
-    if not agenta_config_file.exists():
+    Lexica_config_file = Lexica_dir / "config.toml"
+    if not Lexica_config_file.exists():
         return None
-    global_config = toml.load(agenta_config_file)
+    global_config = toml.load(Lexica_config_file)
     if var_name not in global_config:
         return None
     return global_config[var_name]
@@ -50,23 +50,23 @@ def set_global_config(var_name: str, var_value: Any) -> None:
         var_name: the name of the variable to set
         var_value: the value to set the variable to
     """
-    agenta_dir = Path.home() / ".agenta"
-    if not agenta_dir.exists():
-        agenta_dir.mkdir(exist_ok=True)
-    agenta_config_file = agenta_dir / "config.toml"
-    if not agenta_config_file.exists():
+    Lexica_dir = Path.home() / ".Lexica"
+    if not Lexica_dir.exists():
+        Lexica_dir.mkdir(exist_ok=True)
+    Lexica_config_file = Lexica_dir / "config.toml"
+    if not Lexica_config_file.exists():
         config = {}
-        with agenta_config_file.open("w") as config_file:
+        with Lexica_config_file.open("w") as config_file:
             toml.dump(config, config_file)
-    global_config = toml.load(agenta_config_file)
+    global_config = toml.load(Lexica_config_file)
     global_config[var_name] = var_value
-    with open(agenta_config_file, "w") as config_file:
+    with open(Lexica_config_file, "w") as config_file:
         toml.dump(global_config, config_file)
 
 
 def get_api_key(backend_host: str) -> str:
     """
-    Retrieve or request the API key for accessing the Agenta platform.
+    Retrieve or request the API key for accessing the Lexica platform.
 
     This function first looks for an existing API key in the global config file.
     If found, it prompts the user to confirm whether they'd like to use that key.
@@ -76,7 +76,7 @@ def get_api_key(backend_host: str) -> str:
         backend_host (str): The URL of the backend host.
 
     Returns:
-        str: The API key to be used for accessing the Agenta platform.
+        str: The API key to be used for accessing the Lexica platform.
 
     Raises:
         SystemExit: If the user cancels the input by pressing Ctrl+C.
@@ -135,7 +135,7 @@ def update_variants_from_backend(
     Returns:
         a new config object later to be saved using toml.dump(config, config_file.open('w'))
     """
-    client = AgentaApi(
+    client = LexicaApi(
         base_url=f"{host}/{BACKEND_URL_SUFFIX}",
         api_key=api_key,
     )
@@ -189,13 +189,13 @@ def display_app_variant(variant: AppVariant):
         click.echo(click.style("  Defaults from code", fg="cyan"))
     if variant.previous_variant_name:
         click.echo(
-            click.style("Template Variant Name: ", bold=True, fg="magenta")
-            + click.style(variant.previous_variant_name, fg="magenta")
+            click.style("Template Variant Name: ", bold=True, fg="mLexica")
+            + click.style(variant.previous_variant_name, fg="mLexica")
         )
     else:
         click.echo(
-            click.style("Template Variant Name: ", bold=True, fg="magenta")
-            + click.style("None", fg="magenta")
+            click.style("Template Variant Name: ", bold=True, fg="mLexica")
+            + click.style("None", fg="mLexica")
         )
     click.echo(
         click.style("-" * 50, bold=True, fg="white")
