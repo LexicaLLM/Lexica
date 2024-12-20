@@ -4,14 +4,14 @@ import dotenv from "dotenv";
 import { fileURLToPath } from "url";
 import { dirname, resolve } from "path";
 
-// Get current directory in ESM
+// Get current directory in ESM:
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-// Load environment variables from .env file
+// Load environment variables from .env file:
 dotenv.config({ path: resolve(__dirname, ".env") });
 
-// Verify required environment variables
+// Verify required environment variables:
 const requiredEnvVars = ["TESTMAIL_API_KEY", "TESTMAIL_NAMESPACE"];
 const missingEnvVars = requiredEnvVars.filter(
   (varName) => !process.env[varName]
@@ -23,7 +23,7 @@ if (missingEnvVars.length > 0) {
 }
 
 /**
- * See https://playwright.dev/docs/test-configuration.
+ * See https://playwright.dev/docs/test-configuration. Everythine else will be there:
  */
 export default defineConfig({
   testDir: "./tests",
