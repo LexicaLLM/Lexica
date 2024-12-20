@@ -2,8 +2,8 @@ import { TestEnvironment } from "./testTags";
 import type PlaywrightConfig from "./types";
 
 /**
- * Base URLs for different deployment environments
- * Maps environment types to their respective API endpoints
+ * Base URLs for different deployment environments:
+ * Maps environment types to their respective API endpoints:
  */
 export const deployments: Record<PlaywrightConfig.DeploymentType, string> = {
   [TestEnvironment.local]: "http://localhost:3000",

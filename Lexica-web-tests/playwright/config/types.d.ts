@@ -1,5 +1,5 @@
 /**
- * Global configuration types for Playwright test suite
+ * Global configuration types for Playwright test suite:
  */
 declare namespace PlaywrightConfig {
   /** Test category types derived from their respective enums */
@@ -21,16 +21,16 @@ declare namespace PlaywrightConfig {
     | TestPathType
     | TestEnvironmentType;
 
-  /** Tag argument structure for CLI and test decoration */
+  /** Tag argument structure for CLI and test decoration: */
   interface TagArgument {
-    flag: `-${TestTagType}`; // CLI flag format
-    prefix: `@${TestTagType}:`; // Test decoration format
+    flag: `-${TestTagType}`; // CLI flag format:
+    prefix: `@${TestTagType}:`; // Test decoration format:
   }
 
-  /** Project feature configuration for different environments */
+  /** Project feature configuration for different environments: */
   interface ProjectFeatureConfig {
-    readonly features: TestFeatureScopeType[]; // Available features in environment
-    readonly isCloudVariant: boolean; // Whether environment requires cloud authentication
+    readonly features: TestFeatureScopeType[]; // Available features in environment:
+    readonly isCloudVariant: boolean; // Whether environment requires cloud authentication:
   }
 
   /** Environment-specific project configurations */

@@ -18,9 +18,9 @@ const baseConfig = {
 };
 
 /**
- * Creates a RegExp pattern to match feature-scoped tests
- * @param features - Array of feature scope tags
- * @returns RegExp pattern for matching test decorators
+ * Creates a RegExp pattern to match feature-scoped tests:
+ * @param features - Array of feature scope tags:
+ * @returns RegExp pattern for matching test decorators:
  */
 const createFeaturePattern = (
   features: PlaywrightConfig.TestFeatureScopeType[]
@@ -28,9 +28,9 @@ const createFeaturePattern = (
   new RegExp(features.map((feature) => `@feature-scope:${feature}`).join("|"));
 
 /**
- * Creates a project configuration for a specific environment
- * @param env - Target environment type
- * @returns Playwright project configuration
+ * Creates a project configuration for a specific environment:
+ * @param env - Target environment type:
+ * @returns Playwright project configuration:
  */
 const createProjectConfig = (
   env: PlaywrightConfig.TestEnvironmentType

@@ -1,7 +1,7 @@
 import type PlaywrightConfig from "./types";
 
 /**
- * Test scope categories defining different functional areas of the application
+ * Test scope categories defining different functional areas of the application:
  */
 export const TestScope = {
   AUTH: "auth", // Authentication flows
@@ -12,7 +12,7 @@ export const TestScope = {
 } as const;
 
 /**
- * Test coverage levels defining the depth and breadth of testing
+ * Test coverage levels defining the depth and breadth of testing:
  */
 export const TestCoverage = {
   SMOKE: "smoke", // Wide breadth, shallow depth
@@ -22,15 +22,15 @@ export const TestCoverage = {
 } as const;
 
 /**
- * Test path types defining the nature of test scenarios
+ * Test path types defining the nature of test scenarios:
  */
 export const TestPath = {
-  HAPPY: "happy", // Expected user flows
-  GRUMPY: "grumpy", // Error states & edge cases
+  HAPPY: "happy", // Expected user flows:
+  GRUMPY: "grumpy", // Error states & edge cases:
 } as const;
 
 /**
- * Deployment environments where tests can be executed
+ * Deployment environments where tests can be executed:
  */
 export const TestEnvironment = {
   local: "local", // Local OSS deployment
