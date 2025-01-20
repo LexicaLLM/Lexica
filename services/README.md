@@ -32,6 +32,6 @@ Each service includes:
 - REST API documentation (`.rest` files)
 - Implementation code (`_app.py`)
 
-## Usage
+## Usage:
 
 For usage examples and API details, refer to the `.rest` files in each service's directory.

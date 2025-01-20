@@ -6,7 +6,7 @@
 ### Health Check
 GET {{baseUrl}}/{{service}}/health HTTP/1.1
 
-### OpenAPI
+### OpenAPI key:
 GET {{baseUrl}}/{{service}}/openapi.json HTTP/1.1
 
 ### Basic Text Response - Single message

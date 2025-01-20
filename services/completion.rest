@@ -1,7 +1,7 @@
 @baseUrl = http://localhost
 @service = completion
 
-### These request can be run using the Rest Client extension in vsCode
+### These request can be run using the Rest Client extension in VsCode
 
 ### Health Check
 GET {{baseUrl}}/{{service}}/health HTTP/1.1
