@@ -7,7 +7,7 @@ const config: Config = {
     content: [
         "./src/**/*.{js,ts,jsx,tsx}",
 
-        // Path to Tremor module
+        // Path to Tremor module complete
         "./node_modules/@tremor/**/*.{js,ts,jsx,tsx}",
     ],
     theme: {
@@ -18,7 +18,7 @@ const config: Config = {
                 sans: ["var(--font-inter)"],
             },
             colors: {
-                // light mode
+                // light mode:
                 tremor: {
                     brand: {
                         faint: token.colorPrimaryBgHover,
