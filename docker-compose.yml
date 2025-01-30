@@ -58,7 +58,7 @@ services:
                 "agenta_backend.main:app",
                 "--host",
                 "0.0.0.0",
-                "--port",
+                "---port",
                 "8000",
                 "--reload",
                 "--log-level",
