@@ -1,4 +1,4 @@
-# Stage 1: Build Stage
+# Stage 1: Build Stage:
 FROM node:20.18-slim AS builder
 
 ARG NEXT_PUBLIC_AGENTA_API_URL="http://localhost"
@@ -13,10 +13,10 @@ ENV NEXT_PUBLIC_POSTHOG_API_KEY=$NEXT_PUBLIC_POSTHOG_API_KEY
 
 WORKDIR /app
 
-# Install only production dependencies
+# Install only production dependencies:
 COPY package.json package-lock.json* ./
 RUN npm ci
-# Copy only necessary files
+# Copy only necessary files:
 COPY src ./src
 COPY public ./public
 COPY next.config.js .
@@ -24,7 +24,7 @@ COPY tsconfig.json .
 COPY postcss.config.js .
 COPY tailwind.config.ts .
 COPY sentry.* .
-# Build the Next.js app for production
+# Build the Next.js app for production:
 RUN npm run build
 
 # Stage 2: Production Stage
