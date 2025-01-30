@@ -38,7 +38,7 @@ from .sdk.managers.deployment import DeploymentManager
 from .sdk import assets as assets
 from .sdk import tracer
 from .client.exceptions import APIRequestError
-# Imports complete
+# Imports complete"
 config = PreInitObject("agenta.config", Config)
 DEFAULT_AGENTA_SINGLETON_INSTANCE = AgentaSingleton()
 
@@ -47,7 +47,7 @@ types = client_types
 api = None
 async_api = None
 
-tracing = DEFAULT_AGENTA_SINGLETON_INSTANCE.tracing  #  ignore
+tracing = DEFAULT_AGENTA_SINGLETON_INSTANCE.tracing  #  ignore:
 tracer = get_tracer(tracing)
 
 
@@ -60,7 +60,7 @@ def init(
     # DEPRECATING
     app_id: Optional[str] = None,
 ):
-    global api, async_api, tracing, tracer  # pylint: disable=global-statement
+    global api, async_api, tracing, tracer  # pylint: disable=global-statement:
 
     _init(
         host=host,
@@ -71,8 +71,8 @@ def init(
         app_id=app_id,
     )
 
-    api = DEFAULT_AGENTA_SINGLETON_INSTANCE.api  # type: ignore
-    async_api = DEFAULT_AGENTA_SINGLETON_INSTANCE.async_api  # type: ignore
+    api = DEFAULT_AGENTA_SINGLETON_INSTANCE.api  # type: ignore:
+    async_api = DEFAULT_AGENTA_SINGLETON_INSTANCE.async_api  # type: ignore:
 
     tracing = DEFAULT_AGENTA_SINGLETON_INSTANCE.tracing  # type: ignore
     tracer = get_tracer(tracing)
