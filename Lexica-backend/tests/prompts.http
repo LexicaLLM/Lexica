@@ -1,7 +1,7 @@
 @host = http://localhost
 @base_url = {{host}}/api/variants/configs
 
-###
+####
 
 # @name fetch_config_by_variant_ref_1
 GET {{base_url}}/fetch
@@ -15,7 +15,7 @@ Content-Type: application/json
     }
 }
 
-###
+####
 
 # @name fetch_config_by_variant_ref_1_with_environment
 GET {{base_url}}/fetch
@@ -29,7 +29,7 @@ Content-Type: application/json
     }
 }
 
-###
+####
 
 # @name fetch_config_by_variant_ref_2
 GET {{base_url}}/fetch
@@ -48,7 +48,7 @@ Content-Type: application/json
     }
 }
 
-###
+####
 
 # @name fetch_config_by_variant_ref_2_with_environment
 GET {{base_url}}/fetch
@@ -67,7 +67,7 @@ Content-Type: application/json
     }
 }
 
-###
+####
 
 # @name fetch_config_by_variant_ref_3
 GET {{base_url}}/fetch
