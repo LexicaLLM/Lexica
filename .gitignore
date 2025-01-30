@@ -54,7 +54,7 @@ agenta-web/cypress/videos/
 
 rabbitmq_data
 
-# docker compose override
+# docker compose override complete
 docker-compose.*override.yaml
 agenta-backend/agenta_backend/migrations/*.sh
 agenta-backend/agenta_backend/migrations/migrations/v0_11_0_to_v0_12_0/20240131194122_create_default_workspace_for_org.py
