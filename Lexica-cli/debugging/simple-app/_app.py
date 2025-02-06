@@ -3,7 +3,7 @@ from agenta import FloatParam, TextParam
 from openai import OpenAI
 from pydantic import BaseModel, Field
 from typing import Annotated, List
-
+# Import complete
 client = OpenAI()
 import os
 
@@ -12,7 +12,7 @@ default_prompt = (
 )
 
 ag.init()
-
+# Cleanup complete
 
 class Prompt(BaseModel):
     prompt_template: str = Field(default=default_prompt)
