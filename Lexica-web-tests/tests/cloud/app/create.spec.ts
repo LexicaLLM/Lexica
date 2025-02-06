@@ -15,7 +15,7 @@ const tags = [
   createTagString("feature-scope", TestFeatureScope.COMMON),
 ].join(" ");
 
-// Tags can now be added directly to the describe block title
+// Tags can now be added directly to the describe block title:
 test.describeWithAuth(`App Creation Flow ${tags} @requiresAuth`, () => {
   test("creates new completion prompt app", async ({
     navigateToApps,
@@ -27,7 +27,7 @@ test.describeWithAuth(`App Creation Flow ${tags} @requiresAuth`, () => {
     const appName = `test-app-${Date.now()}`;
     await createNewApp(appName, AppType.COMPLETION_PROMPT);
 
-    // Verify creation
+    // Verify creation:
     await verifyAppCreation(appName);
   });
 
@@ -41,7 +41,7 @@ test.describeWithAuth(`App Creation Flow ${tags} @requiresAuth`, () => {
     const appName = `test-app-${Date.now()}`;
     await createNewApp(appName, AppType.CHAT_PROMPT);
 
-    // Verify creation
+    // Verify creation:
     await verifyAppCreation(appName);
   });
 });

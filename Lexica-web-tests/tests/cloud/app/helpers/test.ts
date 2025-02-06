@@ -7,12 +7,12 @@ import type { AppFixtures, AppActions, CreateAppResponse } from "../types";
 
 /**
  * App-specific test fixtures extending the base test fixture.
- * Provides high-level actions for app management tests.
+ * Provides high-level actions for app management tests:
  */
 const testWithAppFixtures = baseTest.extend<AppFixtures>({
   /**
    * Navigates to the apps dashboard and verifies page load.
-   * Uses base fixture's page navigation and text validation.
+   * Uses base fixtures page navigation and text validation.
    */
   navigateToApps: async ({ page, uiHelpers }, use) => {
     await use(async () => {
@@ -24,7 +24,7 @@ const testWithAppFixtures = baseTest.extend<AppFixtures>({
   },
 
   /**
-   * Creates a new app and validates both UI flow and API response.
+   * Creates a new app and validates both UI flow and API response:
    *
    * @param appName - Name for the new app
    * @returns CreateAppResponse containing app details from API
@@ -65,7 +65,7 @@ const testWithAppFixtures = baseTest.extend<AppFixtures>({
   },
 
   /**
-   * Verifies successful app creation in the UI.
+   * Verifies successful app creation in the UI:
    *
    * @param appName - Name of the created app to verify
    *
