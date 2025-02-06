@@ -10,7 +10,7 @@ COPY . .
 RUN pip install --upgrade pip \
     && pip install --no-cache-dir agenta openai python-dotenv uvicorn "litellm>=1.0,<2.0" google-generativeai
 
-# Add agenta-cli to PYTHONPATH so it can find the local agenta package
+# Add agenta cli to PYTHONPATH so it can find the local agenta package
 ENV PYTHONPATH=/agenta-cli:$PYTHONPATH
 
 EXPOSE 80

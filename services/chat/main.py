@@ -1,6 +1,6 @@
 from uvicorn import run
 import agenta
-import chat_service  # This will register the routes with the FastAPI application
+import chat_service  # This will register the routes with the FastAPI application and marks as complete
 import os
 
 
