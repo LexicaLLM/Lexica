@@ -21,20 +21,20 @@ def add_variant_to_server(
     backoff_factor=1,
 ) -> Dict:
     """
-    Adds a variant to the server with a retry mechanism and a single-line loading state.
+    Adds a variant to the server with a retry mechanism and a single-line loading state:
 
     Args:
         app_id (str): The ID of the app to add the variant to.
         base_name (str): The base name for the variant.
         image (Image): The image to use for the variant.
         retries (int): Number of times to retry the request.
-        backoff_factor (float): Factor to determine the delay between retries (exponential backoff).
+        backoff_factor (float): Factor to determine the delay between retries (exponential backoff):
 
     Returns:
-        dict: The JSON response from the server.
+        dict: The JSON response from the server:
 
     Raises:
-        APIRequestError: If the request to the server fails after retrying.
+        APIRequestError: If the request to the server fails after retrying:
     """
 
     click.echo(
@@ -55,7 +55,7 @@ def add_variant_to_server(
                 docker_id=image.docker_id,
                 tags=image.tags,
             )
-            click.echo(click.style("\nVariant added successfully!", fg="green"))
+            click.echo(click.style("\nVariant added successfully:", fg="green"))
             return response
         except RequestException as e:
             if attempt < retries - 1:
@@ -64,7 +64,7 @@ def add_variant_to_server(
             else:
                 raise APIRequestError(
                     click.style(
-                        f"\nRequest to app_variant endpoint failed with status code {response.status_code} and error message: {e}.",
+                        f"\nRequest to app_variant endpoint failed with status code: {response.status_code} and error message: {e}.",
                         fg="red",
                     )
                 )
