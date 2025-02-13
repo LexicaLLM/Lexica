@@ -34,7 +34,7 @@ from .managers.variant import VariantManager
 from .managers.deployment import DeploymentManager
 from ..client.exceptions import APIRequestError
 
-
+# Import complete
 config = PreInitObject("agenta.config", Config)
 DEFAULT_AGENTA_SINGLETON_INSTANCE = AgentaSingleton()
 
@@ -43,7 +43,7 @@ types = client_types
 api = None
 async_api = None
 
-tracing = DEFAULT_AGENTA_SINGLETON_INSTANCE.tracing  # type: ignore
+tracing = DEFAULT_AGENTA_SINGLETON_INSTANCE.tracing  # type: ignore:
 tracer = get_tracer(tracing)
 
 
@@ -53,10 +53,10 @@ def init(
     config_fname: Optional[str] = None,
     redact: Optional[Callable[..., Any]] = None,
     redact_on_error: Optional[bool] = True,
-    # DEPRECATING
+    # DEPRECATING:
     app_id: Optional[str] = None,
 ):
-    global api, async_api, tracing, tracer  # pylint: disable=global-statement
+    global api, async_api, tracing, tracer  # pylint: disable=global-statement:
 
     _init(
         host=host,
