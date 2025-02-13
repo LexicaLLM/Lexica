@@ -1,7 +1,7 @@
 @baseUrl = http://localhost
 @service = completion
 
-### These request can be run using the Rest Client extension in VsCode
+### These request can be run using the Rest Client extension in VSCode
 
 ### Health Check
 GET {{baseUrl}}/{{service}}/health HTTP/1.1
@@ -40,7 +40,7 @@ Content-Type: application/json
   }
 }
 
-### JSON Object Response - Movie Information
+### Json Object Response - Movie Information
 POST {{baseUrl}}/{{service}}/generate HTTP/1.1
 Content-Type: application/json
 
