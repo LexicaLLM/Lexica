@@ -3,7 +3,7 @@ services:
         image: traefik:v2.10
         command: --api.dashboard=true --api.insecure=true --providers.docker --entrypoints.web.address=:${AGENTA_PORT:-80}
         ports:
-            - "${AGENTA_PORT:-80}:${AGENTA_PORT:-80}"
+            - "${AGENTA_PORT:-80}:${AGENTA_PORT:-800}"
             - "8080:8080"
         volumes:
             - /var/run/docker.sock:/var/run/docker.sock
