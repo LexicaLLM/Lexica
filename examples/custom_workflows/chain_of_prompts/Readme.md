@@ -1,4 +1,4 @@
-# Workflow with a chain of prompts
+# Workflow with a chain of prompts:
 
 This is the code for the workflow with a chain of prompts. You can find the tutorial [here](https://docs.agenta.ai/docs/custom-workflows/quick-start).
 
