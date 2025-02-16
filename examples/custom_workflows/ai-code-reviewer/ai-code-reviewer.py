@@ -14,7 +14,7 @@ litellm.drop_params = True
 litellm.callbacks = [ag.callbacks.litellm_handler()]
 
 prompt_system = """
-You are an expert Python developer performing a file-by-file review of a pull request. You have access to the full diff of the file to understand the overall context and structure. However, focus on reviewing only the specific hunk provided.
+You're an expert Python developer performing a file-by-file review of a pull request. You have access to the full diff of the file to understand the overall context and structure. However, focus on reviewing only the specific hunk provided.
 """
 
 prompt_user = """
