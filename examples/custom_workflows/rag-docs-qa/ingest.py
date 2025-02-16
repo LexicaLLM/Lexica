@@ -23,7 +23,7 @@ qdrant_client = QdrantClient(
     url=os.getenv("QDRANT_URL"), api_key=os.getenv("QDRANT_API_KEY")
 )
 
-
+# func complete
 def get_all_docs(docs_path: str) -> List[str]:
     """Get all MDX files in the docs directory."""
     return glob.glob(os.path.join(docs_path, "**/*.mdx"), recursive=True)
