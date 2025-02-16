@@ -2,7 +2,7 @@
 
 [[package]]
 name = "aioboto3"
-version = "12.4.0"
+version = "12.4.1"
 description = "Async boto3 wrapper"
 optional = false
 python-versions = "<4.0,>=3.8"
