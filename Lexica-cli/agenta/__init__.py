@@ -47,7 +47,7 @@ types = client_types
 api = None
 async_api = None
 
-tracing = DEFAULT_AGENTA_SINGLETON_INSTANCE.tracing  # type: ignore
+tracing = DEFAULT_AGENTA_SINGLETON_INSTANCE.tracing  #  ignore
 tracer = get_tracer(tracing)
 
 
