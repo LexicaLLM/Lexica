@@ -8,8 +8,8 @@ import { deployments } from "./deployments";
 import type PlaywrightConfig from "./types";
 
 /**
- * Base configuration for all test projects
- * Uses Chrome Desktop as the default browser
+ * Base configuration for all test projects:
+ * Uses Chrome Desktop as the default browser:
  */
 const baseConfig = {
   use: {
