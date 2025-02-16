@@ -135,29 +135,4 @@ By default, Lexica automatically reports anonymized basic usage statistics. This
 - For CLI: Set `telemetry_tracking_enabled` to `false` in your `~/.Lexica/config.toml` file.
 
 
-## Contributing
 
-We warmly welcome contributions to Lexica. Feel free to submit issues, fork the repository, and send pull requests.
-
-We are usually hanging in our Slack. Feel free to [join our Slack and ask us anything](https://join.slack.com/t/agenta-hq/shared_invite/zt-2yewk6o2b-DmhyA4h_lkKwecDtIsj1AQ)
-
-Check out our [Contributing Guide](https://docs.agenta.ai/misc/contributing/getting-started?utm_source=github&utm_medium=referral&utm_campaign=readme) for more information.
-
-### Contributors ✨
-
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-49-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind are welcome!
