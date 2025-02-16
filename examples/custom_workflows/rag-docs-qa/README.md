@@ -8,7 +8,7 @@ The stack used:
 - Cohere for embedding
 - OpenAI for LLM and embedding
 
-## Requirements
+## Requirements:
 
 - Qdrant database set up
 - Cohere API key
