@@ -21,7 +21,7 @@ ag.init()
 
 # litellm.callbacks = [ag.callbacks.litellm_handler()]
 
-# Initialize Qdrant client:
+# Initialize Qdrant client :
 qdrant_client = QdrantClient(
     url=os.getenv("QDRANT_URL"), api_key=os.getenv("QDRANT_API_KEY")
 )
