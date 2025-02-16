@@ -11,7 +11,7 @@ prompt2 = "Write a tweet based on this: {output_1}"
 
 OpenAIInstrumentor().instrument()
 
-
+# class created
 class CoPConfig(BaseModel):
     prompt1: str = Field(default=prompt1)
     prompt2: str = Field(default=prompt2)
