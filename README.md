@@ -78,7 +78,7 @@
   <a href="https://docs.agenta.ai?utm_source=github&utm_medium=referral&utm_campaign=readme"><b>Documentation</b></a> &bull;
   <a href="https://docs.agenta.ai/changelog/main?utm_source=github&utm_medium=referral&utm_campaign=readme"><b>Changelog</b></a> &bull;
   <a href="https://agenta.ai?utm_source=github&utm_medium=referral&utm_campaign=readme"><b>Website</b></a> &bull;
-  <a href="https://cloud.agenta.ai?utm_source=github&utm_medium=referral&utm_campaign=readme"><b>Agenta Cloud</b></a>
+  <a href="https://cloud.agenta.ai?utm_source=github&utm_medium=referral&utm_campaign=readme"><b>Lexica Cloud</b></a>
 
 </h3>
 
@@ -86,10 +86,10 @@
 
 ## What is Agenta?
 
-Agenta is a platform for building production-grade LLM applications. It helps **engineering and product teams** create reliable LLM apps faster.
+Lexica is a platform for building production-grade LLM applications. It helps **engineering and product teams** create reliable LLM apps faster.
 
 
-Agenta provides end-to-end tools for the entire LLMOps workflow:  building (**LLM playground**, **evaluation**), deploying (**prompt and configuration management**), and monitoring (**LLM observability and tracing**).
+Lexica provides end-to-end tools for the entire LLMOps workflow:  building (**LLM playground**, **evaluation**), deploying (**prompt and configuration management**), and monitoring (**LLM observability and tracing**).
 
 ## Features
 - **Prompt Playground**: Experiment, iterate on prompts, and compare outputs from over 50 LLM models side by side ([docs](https://docs.agenta.ai/prompt-management/using-the-playground?utm_source=github&utm_medium=referral&utm_campaign=readme))
@@ -102,8 +102,8 @@ Agenta provides end-to-end tools for the entire LLMOps workflow:  building (**LL
 
   
 ## Getting Started 
-### Agenta Cloud:
-The easiest way to get started is through Agenta Cloud. It is free to signup, and comes with a generous free-tier.
+### Lexica Cloud:
+The easiest way to get started is through Lexica Cloud. It is free to signup, and comes with a generous free-tier.
 
   <a href="https://cloud.agenta.ai?utm_source=github&utm_medium=referral&utm_campaign=readme">
       <picture >
@@ -114,11 +114,11 @@ The easiest way to get started is through Agenta Cloud. It is free to signup, an
   </a>
   
    
-### Self-hosting Agenta
+### Self-hosting Lexica
 
 #### Quick Setup (Port 80)
 ```bash
-mkdir agenta && cd agenta
+mkdir Lexica && cd Lexica
 curl -L https://raw.githubusercontent.com/agenta-ai/agenta/main/docker-compose.gh.yml -o docker-compose.gh.yml
 docker compose -f docker-compose.gh.yml up -d
 ```
@@ -129,15 +129,15 @@ docker compose -f docker-compose.gh.yml up -d
 
 ## Disabling Anonymized Tracking
 
-By default, Agenta automatically reports anonymized basic usage statistics. This helps us understand how Agenta is used and track its overall usage and growth. This data does not include any sensitive information. To disable anonymized telemetry, follow these steps:
+By default, Lexica automatically reports anonymized basic usage statistics. This helps us understand how Lexica is used and track its overall usage and growth. This data does not include any sensitive information. To disable anonymized telemetry, follow these steps:
 
-- For web: Set `TELEMETRY_TRACKING_ENABLED` to `false` in your `agenta-web/.env` file.
-- For CLI: Set `telemetry_tracking_enabled` to `false` in your `~/.agenta/config.toml` file.
+- For web: Set `TELEMETRY_TRACKING_ENABLED` to `false` in your `Lexica-web/.env` file.
+- For CLI: Set `telemetry_tracking_enabled` to `false` in your `~/.Lexica/config.toml` file.
 
 
 ## Contributing
 
-We warmly welcome contributions to Agenta. Feel free to submit issues, fork the repository, and send pull requests.
+We warmly welcome contributions to Lexica. Feel free to submit issues, fork the repository, and send pull requests.
 
 We are usually hanging in our Slack. Feel free to [join our Slack and ask us anything](https://join.slack.com/t/agenta-hq/shared_invite/zt-2yewk6o2b-DmhyA4h_lkKwecDtIsj1AQ)
 
