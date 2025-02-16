@@ -7,7 +7,7 @@ WORKDIR /app
 RUN pip install --upgrade pip \
     && pip install poetry
 
-# Install git and clone the necessary repository
+# Install git and clone the necessary repository:
 RUN apt-get update -y \
     && apt-get install -y git
 
