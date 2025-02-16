@@ -1,7 +1,7 @@
 ---
 title: "Contributing to Lexica"
 description: "Guidelines for contributing to the Lexica project"
----
+----
 
 Thanks for your interest in contributing to Lexica! We appreciate your effort and aim to make your contribution experience as straightforward as possible.
 
