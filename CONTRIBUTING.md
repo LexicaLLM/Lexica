@@ -1,9 +1,9 @@
 ---
-title: "Contributing to Agenta"
-description: "Guidelines for contributing to the Agenta project"
+title: "Contributing to Lexica"
+description: "Guidelines for contributing to the Lexica project"
 ---
 
-Thanks for your interest in contributing to Agenta! We appreciate your effort and aim to make your contribution experience as straightforward as possible.
+Thanks for your interest in contributing to Lexica! We appreciate your effort and aim to make your contribution experience as straightforward as possible.
 
 ## Getting Started
 
@@ -18,13 +18,13 @@ Thanks for your interest in contributing to Agenta! We appreciate your effort an
 To maintain code quality, we adhere to certain formatting and linting rules:
 
 - **Backend & CLI Formatting with Black:** Use `black` for formatting code in the following directories:
-    - `agenta-backend/**`
-    - `agenta-cli/**`
+    - `Lexica-backend/**`
+    - `Lexica-cli/**`
     - `examples/**`
 
   Install `black` with `pip install black`, navigate to the target directory, and run `black .`.
 
-- **Frontend Formatting with Prettier:** We use `prettier` for frontend formatting. Run `npm run format-fix` in the `agenta-web` directory. If you haven't yet installed `prettier`, do so with `npm install prettier`.
+- **Frontend Formatting with Prettier:** We use `prettier` for frontend formatting. Run `npm run format-fix` in the `Lexica-web` directory. If you haven't yet installed `prettier`, do so with `npm install prettier`.
 
 ## Contribution Steps
 
@@ -40,4 +40,4 @@ We had many zombie issues and PRs (assigned but inactive) in the past. We want t
 - An issue may only be assigned to one person for up to one week (three days for very simple issues). If the issue remains unsolved after a week, it will be unassigned and made available to others.
 - Any pull request (PR) left inactive by the author for over a week will be closed. The author can reopen it if they wish to continue.
 
-We look forward to seeing your contributions to Agenta!
+We look forward to seeing your contributions to Lexica!
