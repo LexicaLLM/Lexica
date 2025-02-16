@@ -23,7 +23,7 @@ const inter = Inter({
     subsets: ["latin"],
     variable: "--font-inter",
 })
-
+ // Import complete
 export default function App({Component, pageProps}: AppProps) {
     useSentryIntegrations()
 

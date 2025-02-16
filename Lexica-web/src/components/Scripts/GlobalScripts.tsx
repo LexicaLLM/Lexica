@@ -32,3 +32,4 @@ const GlobalScripts = () => {
 }
 
 export default GlobalScripts
+// export complete

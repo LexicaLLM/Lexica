@@ -88,19 +88,19 @@ body {
     }
 }
 
-/* It removes antd tabs transition to fix lag when using type="editable-card" */
+/* It removes antd tabs transition to fix lag when using type="editable-card: " */
 .editable-card.ant-tabs-card > .ant-tabs-nav .ant-tabs-tab {
     transition: none;
 }
 
-/* It aligns the settings icon in the table column  */
+/* It aligns the settings icon in the table column:  */
 .ant-table-cell-fix-right-first svg {
     display: flex;
     justify-content: center;
     margin: 0 auto;
 }
 
-/* Custom loading circle for app creation proccess  */
+/* Custom loading circle for app creation proccess:  */
 .loading-circle {
     display: flex;
     justify-content: center;

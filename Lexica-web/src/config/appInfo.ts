@@ -5,3 +5,4 @@ export const appInfo = {
     apiBasePath: "/api/auth",
     websiteBasePath: "/auth",
 }
+// export complete

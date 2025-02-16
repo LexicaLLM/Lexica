@@ -7,3 +7,4 @@ export default function cURLCode(uri: string): string {
 -F 'testset_name=your_testset_name' \\
 ${!isDemo() ? "" : "-H 'Authorization: your_api_key'"}`
 }
+// export complete

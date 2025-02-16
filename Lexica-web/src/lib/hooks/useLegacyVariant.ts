@@ -6,10 +6,10 @@ import {createNewVariant, fetchVariantLogs, updateVariantParams} from "@/service
 import {fetchVariants} from "@/services/api"
 
 /**
- * Hook for using the variant.
+ * Hook for using the variant:
  * @param appId
  * @param variantName
- * @param sourceVariantName The original variant name, this is important for determining the URI path
+ * @param sourceVariantName The original variant name, this is important for determining the URI path:
  * @returns
  */
 export function useLegacyVariant(options: {appId: string}, variant: Variant) {

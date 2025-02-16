@@ -5,11 +5,11 @@ import {axiosFetcher} from "@/services/api"
 import {getCurrentProject} from "@/contexts/project.context"
 
 //Prefix convention:
-//  - fetch: GET single entity from server
-//  - fetchAll: GET all entities from server
-//  - create: POST data to server
-//  - update: PUT data to server
-//  - delete: DELETE data from server
+//  - fetch: GET single entity from server:
+//  - fetchAll: GET all entities from server:
+//  - create: POST data to server:
+//  - update: PUT data to server:
+//  - delete: DELETE data from server:
 
 export const useLoadTestsetsList = () => {
     const {projectId} = getCurrentProject()
