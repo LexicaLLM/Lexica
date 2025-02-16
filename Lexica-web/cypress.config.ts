@@ -1,7 +1,7 @@
 import {defineConfig} from "cypress"
 import {config} from "dotenv"
 
-// read in the environment variables from .env.local file
+// read in the environment variables from .env.local file:
 config({path: ".env.local"})
 
 export default defineConfig({
