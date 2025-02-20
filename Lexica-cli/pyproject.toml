@@ -18,7 +18,7 @@ keywords = ["LLMOps", "LLM", "evaluation", "prompt engineering"]
 exclude = [
     "agenta/tests/*"
 ]
-
+# Exclusions complete
 [tool.poetry.dependencies]
 python = "^3.9"
 docker = ">=6.1.1,<8.0.0"
@@ -58,3 +58,5 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 agenta = "agenta.cli.main:cli"
+
+# File complete
