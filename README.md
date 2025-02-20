@@ -20,7 +20,7 @@
       <div align="center" >
         <a href="">
           <picture >
-            <img width="800" alt="Screenshot Lexica" src="https://github.com/user-attachments/assets/32e95ddb-e001-4462-b92e-72bf4cc78597" >
+            <img width="800" alt="Screenshot Lexica" src="https://cdn.discordapp.com/attachments/1338605972398280737/1342270303144771594/asdadadasd.png?ex=67b90622&is=67b7b4a2&hm=f63847e223ba36e2c76868987635072f8d47cc753087bfe04cdf5d46a1d9426a&" >
           </picture>
         </a>
     </div>
