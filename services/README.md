@@ -25,7 +25,7 @@ We've created two versions of each new service:
    - completion-new-sdk-prompt
    - chat-new-sdk-prompt
 
-## Service Components
+## Service Component
 
 Each service includes:
 - Docker configuration (`docker-compose.yml`)
