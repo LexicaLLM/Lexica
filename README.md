@@ -10,7 +10,7 @@
 </div>
 <p align="center">
     <a href="https://lexica.gitbook.io/lexica">Documentation</a> |
-    <a href="Coming Soon">Website</a> |
+    <a href="https://www.lexica.dev">Website</a> |
     <a href="https://x.com/LexicaLLM">Twitter</a>
   </p>
 </br>
@@ -18,7 +18,7 @@
 <br/>
   <br />
       <div align="center" >
-        <a href="https://cloud.Lexica.ai?utm_source=github&utm_medium=referral&utm_campaign=readme">
+        <a href="">
           <picture >
             <img width="800" alt="Screenshot Lexica" src="https://github.com/user-attachments/assets/32e95ddb-e001-4462-b92e-72bf4cc78597" >
           </picture>
