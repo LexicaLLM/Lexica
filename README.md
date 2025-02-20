@@ -1,9 +1,11 @@
 <p align="center">
-  <a href="https://Lexica.ai?utm_source=github&utm_medium=referral&utm_campaign=readme">
-  </a>
+  <img
+    src="https://cdn.discordapp.com/attachments/1338605972398280737/1342263888925822997/asd.png?ex=67b90029&is=67b7aea9&hm=289365e37a4ba6d234e2674ef29f9260b3b976579b0d165f7724b226084c6717&"
+    alt="screencast"
+  >
 </p>
 <div align="center">
-  <strong> <h1> Lexica<br>The Open source LLMOps Platform </h1></strong>
+  <strong> <h1>The Open source LLMOps Platform </h1></strong>
   Prompt playground, prompt management, evaluation, and observability
 </div>
 <p align="center">
