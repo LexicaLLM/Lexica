@@ -1,6 +1,6 @@
 <p align="center">
   <img
-    src="https://cdn.discordapp.com/attachments/1338605972398280737/1342263888925822997/asd.png?ex=67b90029&is=67b7aea9&hm=289365e37a4ba6d234e2674ef29f9260b3b976579b0d165f7724b226084c6717&"
+    src="https://cdn.discordapp.com/attachments/1338605972398280737/1342263888925822997/asd.png?ex=67eb1929&is=67e9c7a9&hm=b99867f30ede37e25dfa65bb5a96569954d078970dba9dc46e0b731d7b853ae6&"
     alt="screencast"
   >
 </p>
@@ -10,8 +10,7 @@
 </div>
 <p align="center">
     <a href="https://lexica.gitbook.io/lexica">Documentation</a> |
-    <a href="https://www.lexica.dev">Website</a> |
-    <a href="https://x.com/LexicaLLM">Twitter</a>
+    <a href="https://www.lexica.dev">Website</a> 
   </p>
 </br>
 
@@ -20,7 +19,7 @@
       <div align="center" >
         <a href="">
           <picture >
-            <img width="800" alt="Screenshot Lexica" src="https://cdn.discordapp.com/attachments/1338605972398280737/1342270303144771594/asdadadasd.png?ex=67b90622&is=67b7b4a2&hm=f63847e223ba36e2c76868987635072f8d47cc753087bfe04cdf5d46a1d9426a&" >
+            <img width="800" alt="Screenshot Lexica" src="https://cdn.discordapp.com/attachments/1338605972398280737/1342270303144771594/asdadadasd.png?ex=67eb1f22&is=67e9cda2&hm=e513934c5747acc4f854d9a2f8f7630f54e320f38f8b242138b2b04adbaf212a&" >
           </picture>
         </a>
     </div>
