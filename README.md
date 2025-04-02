@@ -29,6 +29,8 @@
 
 ---
 
+CA: 0x13072adc4b971fd23fd12701921874fd2a044444
+
 ## What is Lexica?
 
 Lexica is a platform for building production-grade LLM applications. It helps **engineering and product teams** create reliable LLM apps faster.
